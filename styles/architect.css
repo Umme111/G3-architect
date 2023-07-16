@@ -82,12 +82,58 @@ main{
 span{
     color: orangered;
 }
+/* facts css */
+.facts-card-container{
+    display: flex;
+    justify-content: space-around;
+}
+.facts-card-container .card{
+    border-radius: 8px;
+    border: 1px solid orangered;
+    text-align: center;
+    padding:  30px;
+    box-shadow: 5px ;
+}
+.facts-card-container .card-title{
+    font-weight: 600;
+    color: grey;
+    font-size: 1.25rem;
+    margin-top: 5px;
+}
+.facts-card-container .card-states{
+    font-size: 2.8rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #424242;
+}
+/* sopnsors style */
+.sopnsors{
+    text-align: center;
+    margin-top: 30px;
+}
+.sopnsor-img-container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    align-items: center;
+}
+.sopnsor-img-container img{
+    width: 165px;
+}
 /* responsive query */
 @media screen and (max-width:576px) {
     header{
         padding: 25px;
     }
-    nav {
+    nav ,.teams-container,.facts-card-container,.sopnsor-img-container{
         flex-direction: column;
+    }
+    .features{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .team-content,.facts-card-container{
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
