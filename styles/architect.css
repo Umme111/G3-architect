@@ -1,0 +1,71 @@
+/* work sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+*{
+    font-family: 'Open Sans', sans-serif;
+font-family: 'Work Sans', sans-serif;
+
+}
+header{
+    background-color: bisque;
+    padding: 50px 240px;
+}
+.header-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+    align-items: center;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav>ul{
+    display: flex;
+
+}
+nav li{
+    list-style: none;
+    margin: 30px;
+    font-weight: 300;
+    font-size: 15px;
+}
+nav a{
+    text-decoration: none;
+    color: cadetblue;
+}
+/* banner styles */
+.banner-content{
+    max-width: 800;
+    text-align: center;
+    margin: 0 auto;
+
+}
+.banner-title{
+    font-size: 4rem;
+    font-weight: 700;
+    color: cadetblue;
+}
+.banner-description{
+    color: gray;
+}
+.btn-primary{
+    background-color: orange;
+    padding: 20px 25px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: white;
+    cursor: pointer;
+}
+.banner img{
+    width: 100%;
+}
+/* responsive query */
+@media screen and (max-width:576px) {
+    header{
+        padding: 25px;
+    }
+    nav {
+        flex-direction: column;
+    }
+}
